@@ -48,41 +48,55 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "shahrzad";
+  src: local("shahrzad-medium"),
+    url("../assets/fonts/Shahrzad.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
 body {
-  @apply font-Peyda font-medium;
+  @apply font-Peyda font-semibold;
 }
 
 @utility container {
+  width: 100%;
   max-width: 1265px;
   padding-inline: 30px;
   margin-inline: auto;
-  
+
   @variant sm {
-    padding-inline: 30px;
+    padding-inline: 40px;
   }
-  
+  @variant md {
+    padding-inline: 50px;
+  }
   @variant lg {
-    padding-inline: 80px;
+    padding-inline: 0px;
   }
-  
   @variant xl {
-    padding-inline: 87px;
+    padding-inline: 0px;
   }
+
 }
 
 @theme {
   /* font */
   --font-Peyda: "peyda", sans-serif;
+  --font-shahrzad : "shahrzad";
   /* colors */
   --color-sec-white: #f5f5f5;
   --color-smoky-white: #f5f5f5;
   --color-sec-smoky-white: #e6e6e6;
-  --color-dark-smoky : #CBC9D1;
+  --color-dark-smoky: #cbc9d1;
   --color-paragraph: #00000080;
   --color-main-Purple: #6147a8;
   --color-very-light-purple: #f7f5ff;
   --color-light-purple: #6147a82e;
   /* shadow */
   --shadow-header: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+  /* text shadow */
+  --shadow-hero-shadow: 0px 4px 4px rgba(132, 92, 250, 0.8);
 }
