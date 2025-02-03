@@ -1,1 +1,88 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: "peyda";
+  src: local("PeydaWeb-Regular"),
+    url("../assets/fonts/PeydaWeb-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "peyda";
+  src: local("PeydaWeb-Medium"),
+    url("../assets/fonts/PeydaWeb-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "peyda";
+  src: local("PeydaWeb-SemiBold"),
+    url("../assets/fonts/PeydaWeb-SemiBold") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "peyda";
+  src: local("PeydaWeb-Bold"),
+    url("../assets/fonts/PeydaWeb-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "peyda";
+  src: local("PeydaWeb-ExtraBold"),
+    url("../assets/fonts/PeydaWeb-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "peyda";
+  src: local("PeydaWeb-Black"),
+    url("../assets/fonts/PeydaWeb-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  @apply font-Peyda font-medium;
+}
+
+@utility container {
+  max-width: 1265px;
+  padding-inline: 30px;
+  margin-inline: auto;
+  
+  @variant sm {
+    padding-inline: 30px;
+  }
+  
+  @variant lg {
+    padding-inline: 80px;
+  }
+  
+  @variant xl {
+    padding-inline: 87px;
+  }
+}
+
+@theme {
+  /* font */
+  --font-Peyda: "peyda", sans-serif;
+  /* colors */
+  --color-sec-white: #f5f5f5;
+  --color-smoky-white: #f5f5f5;
+  --color-sec-smoky-white: #e6e6e6;
+  --color-dark-smoky : #CBC9D1;
+  --color-paragraph: #00000080;
+  --color-main-Purple: #6147a8;
+  --color-very-light-purple: #f7f5ff;
+  --color-light-purple: #6147a82e;
+  /* shadow */
+  --shadow-header: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+}
