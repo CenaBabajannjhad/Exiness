@@ -19,7 +19,7 @@
 @font-face {
   font-family: "peyda";
   src: local("PeydaWeb-SemiBold"),
-    url("../assets/fonts/PeydaWeb-SemiBold") format("woff2");
+    url("../assets/fonts/PeydaWeb-SemiBold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -64,28 +64,27 @@ body {
 @utility container {
   width: 100%;
   max-width: 1265px;
-  padding-inline: 30px;
+  padding-inline: 15px;
   margin-inline: auto;
 
   @variant sm {
-    padding-inline: 40px;
+    padding-inline: 30px;
   }
   @variant md {
     padding-inline: 50px;
   }
   @variant lg {
-    padding-inline: 0px;
+    padding-inline: 60px;
   }
   @variant xl {
     padding-inline: 0px;
   }
-
 }
 
 @theme {
   /* font */
   --font-Peyda: "peyda", sans-serif;
-  --font-shahrzad : "shahrzad";
+  --font-shahrzad: "shahrzad";
   /* colors */
   --color-sec-white: #f5f5f5;
   --color-smoky-white: #f5f5f5;
@@ -96,7 +95,22 @@ body {
   --color-very-light-purple: #f7f5ff;
   --color-light-purple: #6147a82e;
   /* shadow */
-  --shadow-header: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+  --shadow-header : 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
   /* text shadow */
-  --shadow-hero-shadow: 0px 4px 4px rgba(132, 92, 250, 0.8);
+  --shadow-hero-shadow : 0px 4px 4px rgba(132, 92, 250, 0.8);
+  /* animation */
+  --animate-logo-slide : slide 15s linear infinite;
+  @keyframes slide{
+    from{
+      transform : translateX(0);
+    }
+    to{
+      transform : translateX(-100%);
+    }
+  }
+}
+@layer utilities{
+  .dir-ltr{
+    direction: ltr !important;
+  }
 }
