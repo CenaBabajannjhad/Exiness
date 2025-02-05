@@ -96,24 +96,32 @@ body {
   --color-main-Purple: #6147a8;
   --color-very-light-purple: #f7f5ff;
   --color-light-purple: #6147a82e;
-  --color-pastel-purple : #E3DEEF; 
+  --color-pastel-purple: #e3deef;
   /* shadow */
-  --shadow-header : 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+  --shadow-header: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
   /* text shadow */
-  --shadow-hero-shadow : 0px 4px 4px rgba(132, 92, 250, 0.8);
+  --shadow-hero-shadow: 0px 4px 4px rgba(132, 92, 250, 0.8);
   /* animation */
-  --animate-logo-slide : slide 15s linear infinite;
-  @keyframes slide{
-    from{
-      transform : translateX(0);
+  --animate-logo-slide: slide 15s linear infinite;
+  @keyframes slide {
+    from {
+      transform: translateX(0);
     }
-    to{
-      transform : translateX(-100%);
+    to {
+      transform: translateX(-100%);
     }
   }
 }
-@layer utilities{
-  .dir-ltr{
+@layer utilities {
+  .dir-ltr {
     direction: ltr !important;
+  }
+  
+  .force-hidden {
+    display: none !important;
+  }
+
+  .logos-swiper .logo-swiper-wrapper {
+    transition-timing-function: linear !important;
   }
 }
