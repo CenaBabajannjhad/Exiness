@@ -475,19 +475,184 @@
     <section>
       <div class="container mb-24">
         <div class="flex items-center justify-between mb-10">
-          <h2 class="font-bold text-3xl">
+          <h2 class="font-bold text-xl lg:text-3xl">
             <span class="font-shahrzad text-main-Purple text-4xl pl-2">؛</span>
             آخرین مقالات
             <span class="text-main-Purple">اکسینس</span>
           </h2>
-          <button class="font-bold text-md bg-main-Purple text-smoky-white px-7 py-4 rounded-3xl">مشاهده بیشتر</button>
+          <!-- arrow -->
+          <div class="lg:hidden flex items-center space-x-2">
+            <button id="slide-right-arrow" class="bg-main-Purple w-[40px] h-[40px] rounded-full flex items-center justify-center">
+              <img class="w-2" src="./src/assets/img/icons/arrow/right-arrow.png" alt="">
+            </button>
+            <button id="slide-left-arrow" class="bg-main-Purple w-[40px] h-[40px] rounded-full flex items-center justify-center">
+              <img class="w-2" src="./src/assets/img/icons/arrow/left-arrow.png" alt="">
+            </button>
+          </div>
+          <button class="hidden lg:inline-block font-bold text-md bg-main-Purple text-smoky-white px-7 py-4 rounded-3xl">مشاهده بیشتر</button>
         </div>
 
-        
-      </div>
+
+        <!-- ******* -->
+        <div class="w-full">
+          <div id="slider" class="grid grid-flow-col grid-cols-2 gap-x-2 transition-transform duration-500 ease-in-out">
+            <div class="bg-smoky-white border-1 border-dark-smoky rounded-3xl">
+              <div>
+                <img class="rounded-tl-3xl rounded-tr-3xl" src="./src/assets/img/articles/article-img-1.png" alt="">
+              </div>
+              <div class="px-4 pt-4 pb-4 space-y-3 text-center">
+                  <h3 class="text-[14px] font-bold">مقاله شماره یک</h3>
+                  <button class="text-[12px] bg-main-Purple text-white w-full font-bold py-1 rounded-3xl">بیشتر بخوانید</button>
+              </div>
+            </div>
+            <div class="bg-smoky-white border-1 border-dark-smoky rounded-3xl">
+              <div>
+                <img class="rounded-tl-3xl rounded-tr-3xl" src="./src/assets/img/articles/article-img-1.png" alt="">
+              </div>
+              <div class="px-4 pt-4 pb-4 space-y-3 text-center">
+                  <h3 class="text-[14px] font-bold">مقاله شماره یک</h3>
+                  <button class="text-[12px] bg-main-Purple text-white w-full font-bold py-1 rounded-3xl">بیشتر بخوانید</button>
+              </div>
+            </div>
+            <div class="bg-smoky-white border-1 border-dark-smoky rounded-3xl">
+              <div>
+                <img class="rounded-tl-3xl rounded-tr-3xl" src="./src/assets/img/articles/article-img-1.png" alt="">
+              </div>
+              <div class="px-4 pt-4 pb-4 space-y-3 text-center">
+                  <h3 class="text-[14px] font-bold">مقاله شماره یک</h3>
+                  <button class="text-[12px] bg-main-Purple text-white w-full font-bold py-1 rounded-3xl">بیشتر بخوانید</button>
+              </div>
+            </div>
+            <div class="bg-smoky-white border-1 border-dark-smoky rounded-3xl">
+              <div>
+                <img class="rounded-tl-3xl rounded-tr-3xl" src="./src/assets/img/articles/article-img-1.png" alt="">
+              </div>
+              <div class="px-4 pt-4 pb-4 space-y-3 text-center">
+                  <h3 class="text-[14px] font-bold">مقاله شماره یک</h3>
+                  <button class="text-[12px] bg-main-Purple text-white w-full font-bold py-1 rounded-3xl">بیشتر بخوانید</button>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <!-- ******* -->
       </div>
     </section>
   </main>
+
+  <footer>
+    <div class="container">
+      <div class="bg-pastel-purple rounded-tr-4xl rounded-tl-4xl px-10 pt-16">
+        <!-- header -->
+        <section class="flex flex-col lg:flex-row items-center lg:items-center lg:justify-between lg:mb-20 mb-6">
+          <div class="mb-8 lg:mb-0">
+            <a href="#">
+              <img class="w-[160px] lg:w-[180px]" src="./src/assets/img/logo/EXINESS.png" alt="">
+            </a>
+          </div>
+          <p
+            class="lg:hidden py-1 w-full text-center font-semibold rounded-2xl text-base text-white bg-main-Purple mb-6">
+            لینک ها</p>
+          <nav>
+            <ul
+              class="flex flex-col lg:flex-row text-center space-y-2 lg:space-y-0 lg:text-right lg:items-center lg:space-x-8 mb-6 lg:mb-0">
+              <li class="font-semibold text-base lg:text-lg">
+                <a href="#">صفحه اصلی</a>
+              </li>
+              <li class="font-semibold text-base lg:text-lg">
+                <a href="#">خدمات</a>
+              </li>
+              <li class="font-semibold text-base lg:text-lg">
+                <a href="#">نمونه کار</a>
+              </li>
+              <li class="font-semibold text-base lg:text-lg">
+                <a href="#">وبلاگ</a>
+              </li>
+              <li class="font-semibold text-base lg:text-lg">
+                <a href="#">درباره ما</a>
+              </li>
+              <li class="font-semibold text-md lg:text-lg">
+                <a href="#">تماس با ما</a>
+              </li>
+            </ul>
+          </nav>
+          <p
+            class="lg:hidden font-semibold w-full text-center rounded-2xl py-1 text-base text-white bg-main-Purple mb-6">
+            ارتباط با ما</p>
+          <div class="hidden lg:block space-x-4">
+            <a class="inline-block" href="#">
+              <img src="./src/assets/img/logo/social/Social icon.png" alt="">
+            </a>
+            <a class="inline-block" href="#">
+              <img src="./src/assets/img/logo/social/Social icon.png" alt="">
+            </a>
+            <a class="inline-block" href="#">
+              <img src="./src/assets/img/logo/social/Social icon.png" alt="">
+            </a>
+          </div>
+        </section>
+        <!-- info and form section -->
+        <section class="pb-14">
+          <div class="mb-6 lg:mb-8">
+            <span class="hidden lg:inline-block bg-main-Purple text-white p-1 font-semibold px-3 py-1 rounded-xl">ارتباط
+              با ما :</span>
+          </div>
+
+          <!-- mobile -->
+          <div class="lg:hidden">
+            <div class="h-1/2 mb-4 flex justify-between">
+              <p class="w-1/2 font-normal text-sm">آدرس : البرز، کرج، گلشهر، بلوار مصطفی خمینی، مجتمع کسری، واحد 25 ،
+                پلاک7612</p>
+              <p class="font-normal text-sm">تماس : 09365008696</p>
+            </div>
+
+            <div class="h-1/2 flex items-center justify-between">
+              <p class="w-2/3 font-normal text-sm">ایمیل : infoexiness@gmail.com</p>
+              <div class="flex items-center space-x-2">
+                <a class="w-[18px] inline-block" href="#">
+                  <img src="./src/assets/img/logo/social/Social icon.png" alt="">
+                </a>
+                <a class="w-[18px] inline-block" href="#">
+                  <img src="./src/assets/img/logo/social/Social icon.png" alt="">
+                </a>
+                <a class="w-[18px] inline-block" href="#">
+                  <img src="./src/assets/img/logo/social/Social icon.png" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- desktop -->
+          <div class="hidden lg:block">
+            <div class="grid grid-cols-2">
+              <div class="space-y-5">
+                <p class="w-2/3 font-normal text-lg">ایمیل : infoexiness@gmail.com</p>
+                <p class="font-normal text-lg">تماس : 09365008696</p>
+                <p class="w-1/2 font-normal text-lg">آدرس : البرز، کرج، گلشهر، بلوار مصطفی خمینی، مجتمع کسری، واحد 25 ،
+                  پلاک7612</p>
+              </div>
+              <!-- form -->
+              <div>
+                <form action="#">
+                  <input type="text">
+                  
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- exiness -->
+        <section class="pb-8">
+          <h3 class="text-center border-b-1 border-black font-bold text-base lg:text-xl pb-2">اکسینس تحولی در بـیزنس |
+            EXINESS
+            Revelotion In Business</h3>
+        </section>
+        <!-- copyright -->
+        <section class="flex items-center justify-center gap-x-4 pb-4 text-center">
+          <p class="font-normal text-[12px] lg:text-lg">Privacy Policy</p>
+          <p class="font-normal text-[12px]">© 2023 EXINESS. All Rights Reserved.</p>
+        </section>
+      </div>
+  </footer>
   <script type="module" src="/src/main.js"></script>
 </body>
 
