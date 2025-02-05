@@ -101,17 +101,9 @@ body {
   --shadow-header: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
   /* text shadow */
   --shadow-hero-shadow: 0px 4px 4px rgba(132, 92, 250, 0.8);
-  /* animation */
-  --animate-logo-slide: slide 15s linear infinite;
-  @keyframes slide {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-100%);
-    }
-  }
 }
+
+
 @layer utilities {
   .dir-ltr {
     direction: ltr !important;
