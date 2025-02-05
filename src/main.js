@@ -7,5 +7,4 @@ document.addEventListener("DOMContentLoaded", () => {
   const closeMenuButton = document.querySelector("#close__button");
   menuButton.addEventListener("click", handlerMenu);
   closeMenuButton.addEventListener("click", handlerMenu);
-
 });

@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     autoplay: {
       delay: 0,
       pauseOnMouseEnter: true,
-      disableOnInteraction: false,
+      disableOnInteraction: true,
     },
     speed: 2500,
     breakpoints: {

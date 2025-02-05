@@ -1,633 +1,989 @@
 <!doctype html>
 <html lang="fa" dir="rtl">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- SEO meta tags -->
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://www.Exiness.ir" />
-  <!-- Open Graph Meta Tags -->
-  <meta property="og:locale" content="fa_IR" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="EXINESS" />
-  <meta property="og:description" content="A short description of your page." />
-  <meta property="og:url" content="https://www.Exiness.ir" />
-  <meta property="og:site_name" content="Exiness" />
-  <meta property="og:image" content="https://www.example.com/image.jpg" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <!-- Twitter Card Meta Tags -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Exiness website" />
-  <meta name="twitter:description" content="A short description of your page." />
-  <meta name="twitter:image" content="https://www.example.com/image.jpg" />
-  <meta name="twitter:site" content="@yourtwitterhandle" />
-  <meta name="twitter:creator" content="@yourtwitterhandle" />
-  <meta name="twitter:label1" content="Category" />
-  <meta name="twitter:data1" content="Tech" />
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "headline": "What is Schema.org and How to Use It?",
-      "author": {
-        "@type": "Person",
-        "name": "John Doe"
-      },
-      "datePublished": "2024-02-02",
-      "dateModified": "2024-02-02",
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://example.com/schema-guide"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Example Blog",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://example.com/logo.png"
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO meta tags -->
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.Exiness.ir" />
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:locale" content="fa_IR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="EXINESS" />
+    <meta
+      property="og:description"
+      content="A short description of your page."
+    />
+    <meta property="og:url" content="https://www.Exiness.ir" />
+    <meta property="og:site_name" content="Exiness" />
+    <meta property="og:image" content="https://www.example.com/image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Exiness website" />
+    <meta
+      name="twitter:description"
+      content="A short description of your page."
+    />
+    <meta name="twitter:image" content="https://www.example.com/image.jpg" />
+    <meta name="twitter:site" content="@yourtwitterhandle" />
+    <meta name="twitter:creator" content="@yourtwitterhandle" />
+    <meta name="twitter:label1" content="Category" />
+    <meta name="twitter:data1" content="Tech" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "What is Schema.org and How to Use It?",
+        "author": {
+          "@type": "Person",
+          "name": "John Doe"
+        },
+        "datePublished": "2024-02-02",
+        "dateModified": "2024-02-02",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://example.com/schema-guide"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Example Blog",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://example.com/logo.png"
+          }
         }
       }
-    }
     </script>
-  <title>Exiness</title>
-  <link rel="stylesheet" href="./src/style/style.css">
-</head>
+    <title>Exiness</title>
+    <link rel="stylesheet" href="./src/style/style.css" />
+  </head>
 
-<body>
-  <header class="shadow-header">
-    <div class="container flex items-center justify-between py-[20px]">
-      <!-- brand -->
-      <section class="order-2 col-span-2 lg:col-span-1 lg:order-1 grid place-items-center">
-        <a href="#" itemprop="url">
-          <img class="w-[140px] md:w-[180px]" src="./src/assets/img/logo/EXINESS.png" alt="logo EXINESS">
-        </a>
-      </section>
-      <!-- navbar -->
-      <nav id="navbar"
-        class="lg:col-span-2 shadow-2xl duration-400 lg:duration-0 translate-x-[120%] z-50 fixed top-0 md:-right-4 -right-2 bottom-0 h-full w-[50%] md:w-[30%] rounded-tl-full rounded-bl-full border-8  border-white bg-main-Purple lg:translate-0 lg:w-auto lg:bg-transparent lg:shadow-none lg:order-2 lg:static">
-        <!-- close menu button -->
-        <section class="lg:hidden relative top-[45%] -translate-y-1/2">
-          <button id="close__button"
-            class="absolute -left-8 lg:hidden cursor-pointer p-5 bg-main-Purple rounded-tl-full rounded-bl-full flex items-center justify-center">
-            <img class="w-[30px] h-[30px]" src="./src/assets/img/icons/header/close.png" alt="close button">
-          </button>
+  <body>
+    <header class="shadow-header">
+      <div class="container flex items-center justify-between py-[20px]">
+        <!-- brand -->
+        <section
+          class="order-2 col-span-2 lg:col-span-1 lg:order-1 grid place-items-center"
+        >
+          <a href="#" itemprop="url">
+            <img
+              class="w-[140px] md:w-[180px]"
+              src="./src/assets/img/logo/EXINESS.png"
+              alt="logo EXINESS"
+            />
+          </a>
         </section>
-        <ul
-          class="text-md pr-6 pl-8 pt-32 lg:pr-0 lg:pl-0 lg:px-0 lg:pt-0 lg:flex lg:items-center lg:justify-center lg:gap-x-8">
-          <li class="lg:hidden mb-10">
-            <a href="#">
-              <img class="w-[130px]" src="./src/assets/img/logo/EXINESS.png" alt="exinnes logo">
-            </a>
-          </li>
-          <li class=" text-white my-7 lg:my-0 lg:text-black">
-            <div class="flex items-center gap-x-3 lg:block pb-6 lg:pb-0">
-              <img class="lg:hidden w-[20px]" src="./src/assets/img/icons/header/home.png" alt="">
-              <a href="#">صفحه اصلی</a>
-            </div>
-            <span class="lg:hidden block w-full h-[4px] bg-gradient-to-r from-white/0 to-white"></span>
-          </li>
-          <li class="flex items-center gap-x-3 lg:block text-white my-7 lg:my-0 lg:text-black">
-            <img class="lg:hidden w-[20px]" src="./src/assets/img/icons/header/archive.png" alt="">
-            <a href="#">خدمات</a>
-          </li>
-          <li class="flex items-center gap-x-3 lg:block text-white my-7 lg:my-0 lg:text-black">
-            <img class="lg:hidden w-[20px]" src="./src/assets/img/icons/header/star.png" alt="">
-            <a href="#">همکاران</a>
-          </li>
-          <li class="flex items-center gap-x-3 lg:block text-white my-7 lg:my-0 lg:text-black">
-            <img class="lg:hidden w-[20px]" src="./src/assets/img/icons/header/blogs.png" alt="">
-            <a href="#">وبلاگ</a>
-          </li>
-          <li class="flex items-center gap-x-3 lg:block text-white my-7 lg:my-0 lg:text-black">
-            <img class="lg:hidden w-[20px]" src="./src/assets/img/icons/header/about.png" alt="">
-            <a href="#">درباره ما</a>
-          </li>
-          <li class="flex items-center gap-x-3 lg:block text-white my-7 lg:my-0 lg:text-black">
-            <img class="lg:hidden w-[20px]" src="./src/assets/img/icons/header/contact.png" alt="">
-            <a href="#">تماس با ما</a>
-          </li>
-        </ul>
-      </nav>
-      <!-- actions -->
-      <section class="space-x-2 order-3 lg:order-3 col-span-1 flex justify-end">
-        <button class="bg-main-Purple text-smoky-white px-2 py-1.5 md:px-5 md:py-2 lg:px-8 lg:py-3.5 rounded-4xl">ثبت
-          نام</button>
-        <button
-          class="bg-very-light-purple text-main-Purple border-1 border-dark-smoky px-2 py-1.5 md:px-5 md:py-2  lg:px-8 lg:py-3.5 rounded-4xl">ورود</button>
-      </section>
-      <!-- hamburger menu -->
-      <section class="lg:hidden order-1 text-base/1">
-        <button id="menu__button" class="space-y-1 md:space-y-1.5 cursor-pointer">
-          <span class="w-[27px] md:w-[45px] h-[4px] rounded-full bg-black block"></span>
-          <span class="w-[27px] md:w-[45px] h-[4px] rounded-full bg-black block"></span>
-          <span class="w-[27px] md:w-[45px] h-[4px] rounded-full bg-black block"></span>
-        </button>
-      </section>
-    </div>
-  </header>
-  <main>
-    <!-- hero-section -->
-    <section>
-      <div class="container py-17 lg:grid lg:grid-cols-2 lg:gap-x-12">
-        <!-- title -->
-        <div class="w-full flex flex-col">
-          <!-- main title -->
-          <div class="order-1 mb-3 lg:mb-6 xl:mb-10">
-            <h2 class="flex items-center justify-center gap-x-1 text-[22px] md:text-[30px] lg:text-[25px] font-medium text-center">
-              <span class=" font-shahrzad text-main-Purple text-4xl lg:text-5xl">؛</span>راهکارهای
-              <span class="text-main-Purple">دیجیتال</span> برای
-              <span class="text-main-Purple">رشد</span>
-              کسب‌وکار شما در
-            </h2>
-          </div>
-          <!-- name -->
-          <h1
-            class="[text-shadow:var(--shadow-hero-shadow)] order-2 font-black text-[40px] md:text-[60px] text-center lg:text-[50px] xl:text-[70px] mb-5 lg:mb-4 xl:mb-6">
-            EXINESS <span class="font-black px-2"> | </span> اکسینس</h1>
-          <!-- sh -->
-          <p class="order-4 font-bold text-xl md:text-2xl text-center leading-[40px] md:leading-[47px] mb-9">اکسینس
-            تحولی در بیزنس <br> EXINESS
-            Revelotion In Business</p>
-          <!-- img -->
-          <div class="space-y-4 text-center lg:hidden order-3 mb-6 w-full">
-            <div class="flex items-center gap-x-4 w-full pl-4">
-              <img class="w-1/2" src="./src/assets/img/Rectangle/Rectangle-p.png" alt="Rectangle">
-              <img class="w-1/2" src="./src/assets/img/Rectangle/Rectangle-light-p.png" alt="Rectangle">
-            </div>
-            <div class="flex items-center gap-x-4 w-full pl-4">
-              <img class="w-1/2" src="./src/assets/img/Rectangle/Rectangle-light-p.png" alt="Rectangle">
-              <img class="w-1/2" src="./src/assets/img/Rectangle/Rectangle-p.png" alt="Rectangle">
-            </div>
-          </div>
-          <!-- actions -->
-          <div
-            class="space-x-4 md:space-x-8 text-center order-5 grid grid-cols-2 lg:flex lg:items-center lg:justify-center">
+        <!-- navbar -->
+        <nav
+          id="navbar"
+          class="lg:col-span-2 shadow-2xl duration-400 lg:duration-0 translate-x-[120%] z-50 fixed top-0 md:-right-4 -right-2 bottom-0 h-full w-[50%] md:w-[30%] rounded-tl-full rounded-bl-full border-8 border-white bg-main-Purple lg:translate-0 lg:w-auto lg:bg-transparent lg:shadow-none lg:order-2 lg:static"
+        >
+          <!-- close menu button -->
+          <section class="lg:hidden relative top-[45%] -translate-y-1/2">
             <button
-              class="bg-main-Purple text-smoky-white rounded-full px-5 py-2 md:px-9 md:py-4.5 text-md md:text-xl font-bold cursor-pointer">همین
-              حالا
-              شروع کنید</button>
-            <button
-              class="bg-very-light-purple text-main-Purple border-1 border-dark-smoky rounded-full px-5 py-2 md:px-9 md:py-4.5 text-md font-bold dm:text-xl cursor-pointer">دریافت
-              مشاوره رایگان</button>
-          </div>
-        </div>
-        <!-- img -->
-        <div class="space-y-4 hidden lg:block">
-          <div class="flex items-center gap-x-4 w-full pl-4">
-            <img class="w-1/2" src="./src/assets/img/Rectangle/Rectangle-light-p.png" alt="Rectangle">
-            <img class="w-1/2" src="./src/assets/img/Rectangle/Rectangle-p.png" alt="Rectangle">
-          </div>
-          <div class="flex items-center gap-x-4 w-full pl-4">
-            <img class="w-1/2" src="./src/assets/img/Rectangle/Rectangle-p.png" alt="Rectangle">
-            <img class="w-1/2" src="./src/assets/img/Rectangle/Rectangle-light-p.png" alt="Rectangle">
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Collaborate. -->
-    <section>
-      <div class="container pt-4 lg:pt-12 mb-38">
-        <div class="text-center mb-16">
-          <h2 class="font-bold text-lg lg:text-3xl flex items-center justify-center gap-x-1">
-            <span class=" font-shahrzad text-main-Purple text-4xl lg:text-5xl">؛</span>
-            برند هایی که با ما همکاری کردند
-          </h2>
-        </div>
-
-        <div class="swiper logos-swiper">
-          <div class="logo-swiper-wrapper swiper-wrapper">
-            <div class="swiper-slide">
-              <img class="h-[70px]" src="./src/assets/img/Collaboration/bejocam black.svg" alt="">
-            </div>
-            <div class="swiper-slide">
-              <img class="h-[70px]" src="./src/assets/img/Collaboration/bumoona black.svg" alt="">
-            </div>
-            <div class="swiper-slide">
-              <img class="h-[70px]" src="./src/assets/img/Collaboration/home louk black.svg" alt="">
-            </div>
-            <div class="swiper-slide">
-              <img class="h-[70px]" src="./src/assets/img/Collaboration/nightway black.svg" alt="">
-            </div>
-            <div class="swiper-slide">
-              <img class="h-[70px]" src="./src/assets/img/Collaboration/Paytabom black.svg" alt="">
-            </div>
-            <div class="swiper-slide">
-              <img class="h-[70px]" src="./src/assets/img/Collaboration/pizo black.svg" alt="">
-            </div>
-            <div class="swiper-slide">
-              <img class="h-[70px]" src="./src/assets/img/Collaboration/sciepole black.svg" alt="">
-            </div>
-            <div class="swiper-slide">
-              <img class="h-[70px]" src="./src/assets/img/Collaboration/spacrea black.svg" alt="">
-            </div>
-            <div class="swiper-slide">
-              <img class="h-[70px]" src="./src/assets/img/Collaboration/tobama black.svg" alt="">
-            </div>
-            <div class="swiper-slide">
-              <img class="h-[70px]" src="./src/assets/img/Collaboration/viravall black.svg" alt="">
-            </div>
-            <div class="swiper-slide">
-              <img class="h-[70px]" src="./src/assets/img/Collaboration/weura black.svg" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- about exiness -->
-    <section>
-      <div class="container pb-12 mb-24">
-        <h2 class="font-bold text-3xl text-center mb-14 flex items-center justify-center gap-x-1">
-          <span class="font-shahrzad text-main-Purple text-4xl lg:text-5xl">؛</span>
-          درباره
-          <span class="text-main-Purple">اکسینس</span>
-        </h2>
-        <div class="lg:grid lg:grid-cols-2 lg:gap-x-7">
-          <div class="grid grid-cols-3 lg:block">
-            <img class="col-span-2 sm:mb-6 md:mb-10 lg:mb-0" src="./src/assets/img/about-team/about-team-img.png"
-              alt="about team img">
-
-            <div class="grid grid-rows-3 lg:hidden items-center text-center space-y-4 pt-4 mb-5">
-              <div class="flex flex-col items-center">
-                <h2 class="font-semibold text-2xl sm:text-4xl md:text-5xl">
-                  <span class="text-main-Purple">+</span>
-                  100
-                </h2>
-                <p class="font-medium text-sm sm:text-lg md:text-xl">مشتریان راضی</p>
-              </div>
-              <div class="flex flex-col items-center ">
-                <h2 class="font-semibold text-2xl sm:text-4xl md:text-5xl">
-                  <span class="text-main-Purple">+</span>200
-                </h2>
-                <p class="font-medium text-sm sm:text-lg md:text-xl">پروژه های موفق</p>
-              </div>
-              <div class="flex flex-col items-center ">
-                <h2 class="font-semibold text-2xl sm:text-4xl md:text-5xl">
-                  <span class="text-main-Purple">+</span>5K
-                </h2>
-                <p class="font-medium text-sm sm:text-lg md:text-xl">کاربران فعال</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="lg:pl-4 lg:pt-8 flex flex-col">
-            <h2
-              class="flex items-center justify-start gap-x-1 font-bold text-2xl mb-4 sm:mb-6 md:mb-7 lg:mb-8 text-center lg:text-right sm:text-[24px]">
-              <span class="font-shahrzad text-main-Purple text-5xl">؛</span>
-              تجربه و نوآوری در کنار هم
-            </h2>
-            <p class="font-medium text-md sm:text-xl mb-6 md:mb-8 lg:mb-14 text-center lg:text-right">
-              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و
-              متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
-            </p>
-
-            <div class="lg:flex items-center justify-center text-center space-x-16 mb-9 hidden ">
-              <div class="flex flex-col items-center">
-                <h2 class="font-semibold text-4xl lg:flex lg:items-center lg:gap-x-2">
-                  <span class="text-main-Purple">+</span>
-                  100
-                </h2>
-                <p class="font-medium text-sm">مشتریان راضی</p>
-              </div>
-              <div class="flex flex-col items-center ">
-                <h2 class="font-semibold text-4xl lg:flex lg:items-center lg:gap-x-2"><span
-                    class="text-main-Purple">+</span>200</h2>
-                <p class="font-medium text-sm">پروژه های موفق</p>
-              </div>
-              <div class="flex flex-col items-center ">
-                <h2 class="font-semibold text-4xl lg:flex lg:items-center lg:gap-x-2"><span
-                    class="text-main-Purple">+</span>5K</h2>
-                <p class="font-medium text-sm">کاربران فعال</p>
-              </div>
-            </div>
-
-            <div class="text-center lg:text-right">
-              <button class="font-semibold text-smoky-white bg-main-Purple px-6 py-3 rounded-3xl sm:text-xl">برای
-                دریافت مشاوره
-                رایگان کلیک کنید.</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- EXINESS lines -->
-    <section>
-      <div class="container mb-10 lg:mb-28">
-        <h2 class="font-bold text-3xl text-center mb-20 flex items-center justify-center gap-x-1">
-          <span class="font-shahrzad text-main-Purple text-4xl lg:text-5xl">؛</span>
-          لاین های
-          <span class="text-main-Purple">اکسینس</span>
-        </h2>
-
-        <div class="grid grid-cols-1 gap-y-6 md:grid-cols-2 md:gap-x-6">
-          <div class="bg-main-Purple rounded-3xl px-8 py-10 md:px-10 md:py-14">
-            <div class="flex items-center space-x-4 pb-6">
-              <div class="w-[60px] h-[70px] flex items-center justify-center rounded-xl bg-white">
-                <img class="w-[50px] h-[50px]" src="./src/assets/img/logo/exiness lines/eness.png" alt="eness brand logo">
-              </div>
-              <h2 class="font-bold text-2xl text-smoky-white">لاینENESS</h2>
-            </div>
-            <p class="text-sec-smoky-white font-normal text-sm md:text-lg">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
-              از
-              صنعت چاپ، و
-              با استفاده از طراحان گرافیک است، چاپگرها و
-              متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.چاپگرها و متون بلکه روزنامه و مجله در ستون و
-              سطرآنچنان که لازم است.</p>
-          </div>
-
-          <div class="bg-main-Purple rounded-3xl px-8 py-10 md:px-10 md:py-14">
-            <div class="flex items-center space-x-4 pb-6">
-              <div class="w-[60px] h-[70px] flex items-center justify-center rounded-xl bg-white">
-                <img class="w-[60px] h-[60px] object-contain"
-                src="./src/assets/img/logo/exiness lines/exin.png" alt="exin brand logo">
-              </div>
-              <h2 class="font-bold text-2xl text-smoky-white">لاینEXIN</h2>
-            </div>
-            <p class="text-sec-smoky-white font-normal text-sm md:text-lg">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
-              از
-              صنعت چاپ، و
-              با استفاده از طراحان گرافیک است، چاپگرها و
-              متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.چاپگرها و متون بلکه روزنامه و مجله در ستون و
-              سطرآنچنان که لازم است.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- services -->
-    <section>
-      <div class="container mb-24">
-        <div class="grid grid-cols-2 grid-rows-5 gap-3">
-          <div class="col-span-2 bg-sec-smoky-white rounded-3xl border-1 border-dark-smoky py-5 md:py-12 lg:py-14">
-            <h2 class="flex items-center justify-center font-bold text-xl md:text-2xl lg:text-3xl text-center pb-2 md:pb-4">
-              <span class="font-shahrzad text-main-Purple text-4xl lg:text-5xl">؛</span>
-              خدمات <span class="text-main-Purple">مشاوره ای</span> اکسینس
-            </h2>
-            <p class="text-center text-paragraph font-medium text-sm md:text-lg pb-5">تیم حرفه ای ما طیف گسترده ای از
-              خدمات را ارائه
-              میدهد.</p>
-            <div class="text-center space-x-4 mb-4">
-              <button
-                class="bg-main-Purple text-smoky-white text-sm font-normal px-6 py-2 md:text-lg rounded-3xl">مشاهده
-                بیشتر</button>
-              <button
-                class="text-main-Purple bg-smoky-white border-1 border-dark-smoky text-sm md:text-lg font-normal px-6 py-2 rounded-3xl">دریافت
-                مشاوره</button>
-            </div>
-          </div>
-          <div
-            class="cols-span-1 bg-sec-smoky-white rounded-3xl border-1 border-dark-smoky px-5 py-8 pb-5 md:py-12 lg:py-14">
-            <div class="flex items-center gap-x-2 text-sm sm:text-lg md:text-xl mb-2">
-              <img src="./src/assets/img/icons/dot.png" alt="dot">
-              <h3 class="text-base md:text-xl lg:text-2xl">مشاوره بازاریابی</h3>
-            </div>
-            <p class="text-paragraph text-[12px] sm:text-sm md:text-lg">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
-              صنعت چاپ، و با
-              استفاده از طراحان گرافیک است.</p>
-          </div>
-          <div
-            class="cols-span-1 bg-sec-smoky-white rounded-3xl border-1 border-dark-smoky px-5 py-8 pb-5 md:py-12 lg:py-14">
-            <div class="flex items-center gap-x-2 text-sm sm:text-lg md:text-xl mb-2">
-              <img src="./src/assets/img/icons/dot.png" alt="dot">
-              <h3 class="text-base md:text-xl lg:text-2xl">مشاوره مدیریت</h3>
-            </div>
-            <p class="text-paragraph text-[12px] sm:text-sm md:text-lg">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
-              صنعت چاپ، و با
-              استفاده از طراحان گرافیک است.</p>
-          </div>
-          <div
-            class="col-span-2 bg-sec-smoky-white rounded-3xl border-1 border-dark-smoky px-5 py-8 pb-5 md:py-12 lg:py-14">
-            <div class="flex items-center gap-x-2 text-sm sm:text-lg md:text-xl mb-2">
-              <img src="./src/assets/img/icons/dot.png" alt="dot">
-              <h3 class="text-base md:text-xl lg:text-2xl">مشاوره فناوری اطلاعات</h3>
-            </div>
-            <p class="text-paragraph text-[12px] sm:text-sm md:text-lg">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
-              صنعت چاپ، و با
-              استفاده از طراحان گرافیک است.</p>
-          </div>
-          <div
-            class="col-span-1 bg-sec-smoky-white rounded-3xl border-1 border-dark-smoky px-5 py-8 pb-5 md:py-12 lg:py-14">
-            <div class="flex items-center gap-x-2 text-sm sm:text-lg md:text-xl mb-2">
-              <img src="./src/assets/img/icons/dot.png" alt="dot">
-              <h3 class="text-base md:text-xl lg:text-2xl">مشاوره منابع انسانی</h3>
-            </div>
-            <p class="text-paragraph text-[12px] sm:text-sm md:text-lg">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
-              صنعت چاپ، و با
-              استفاده از طراحان گرافیک است.</p>
-          </div>
-          <div
-            class="col-span-1 bg-sec-smoky-white rounded-3xl border-1 border-dark-smoky px-5 py-8 pb-5 md:py-12 lg:py-14">
-            <div class="flex items-center gap-x-2 text-sm sm:text-lg md:text-xl mb-2">
-              <img src="./src/assets/img/icons/dot.png" alt="dot">
-              <h3 class="text-base md:text-xl lg:text-2xl">مشاوره مالی </h3>
-            </div>
-            <p class="text-paragraph text-[12px] sm:text-sm md:text-lg">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
-              صنعت چاپ، و با
-              استفاده از طراحان گرافیک است.</p>
-          </div>
-          <div
-            class="col-span-1 bg-sec-smoky-white rounded-3xl border-1 border-dark-smoky px-5 py-8 pb-5 md:py-12 lg:py-14">
-            <div class="flex items-center gap-x-2 text-sm sm:text-lg md:text-xl mb-2">
-              <img src="./src/assets/img/icons/dot.png" alt="dot">
-              <h3 class="text-base md:text-xl lg:text-2xl">مشاوره سرمایه گذاری</h3>
-            </div>
-            <p class="text-paragraph text-[12px] sm:text-sm md:text-lg">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
-              صنعت چاپ، و با
-              استفاده از طراحان گرافیک است.</p>
-          </div>
-          <div
-            class="col-span-1 bg-sec-smoky-white rounded-3xl border-1 border-dark-smoky px-5 py-8 pb-5 md:py-12 lg:py-14">
-            <div class="flex items-center gap-x-2 text-sm sm:text-lg md:text-xl mb-2">
-              <img src="./src/assets/img/icons/dot.png" alt="dot">
-              <h3 class="text-base md:text-xl lg:text-2xl">مشاوره ثبت اختراع </h3>
-            </div>
-            <p class="text-paragraph text-[12px] sm:text-sm md:text-lg">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
-              صنعت چاپ، و با
-              استفاده از طراحان گرافیک است.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- resume -->
-    <section>
-      <div class="container mb-24">
-        <h2 class="flex items-center justify-center gap-x-1 font-bold text-3xl text-center mb-[120px] md:mb-[200px]">
-          <span class="font-shahrzad text-main-Purple text-4xl lg:text-5xl">؛</span>
-          رزومه کاری
-          <span class="text-main-Purple">اکسینس</span>
-        </h2>
-
-
-
-
-        <div
-          class="w-full max-h-[240px] md:max-h-fit flex bg-smoky-white border-1 border-dark-smoky rounded-tl-3xl rounded-tr-3xl ">
-          <div class="relative w-[55%] bg-main-Purple">
-            <div
-              class="absolute -top-[40px] sm:-top-[60px] md:-top-[80px] lg:-top-[100px] pt-[25%]  rounded-tl-4xl rounded-tr-4xl bg-main-Purple flex items-center justify-center w-full h-full">
-              <img class="w-[450px] lg:w-[500px]" src="./src/assets/img/resume/resume-section-img.png" alt="">
-            </div>
-          </div>
-
-
-          <div class="w-[45%] py-10 pl-4 pr-2 md:pr-6">
-            <div class="flex items-center gap-x-1 lg:gap-x-2 mb-3">
-              <img class="w-[25px]" src="./src/assets/img/icons/dot.png" alt="dot">
-              <h3 class="font-bold lg:text-2xl text-base">درباره اکسینس</h3>
-            </div>
-            <div>
-              <p class="text-[11px] lg:text-[14px] lg:text-base font-normal inline-block text-paragraph mb-2 lg:mb-8">لورم ایپسوم متن
-                ساختگی با تولید سادگی
-                نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است.لورم
-                ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است.</p>
-              <div class="text-right">
-                <button
-                  class="bg-main-Purple text-sec-smoky-white text-[10px] lg:text-base font-semibold px-2 py-1 lg:px-8 lg:py-2 rounded-4xl">مشاهده
-                  رزومه اکسینس</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- articles -->
-    <section>
-      <div class="container mb-24">
-        <div class="flex items-center justify-between mb-10">
-          <h2 class="flex items-center justify-center gap-x-1 font-bold text-xl lg:text-3xl">
-            <span class="font-shahrzad text-main-Purple text-4xl lg:text-5xl">؛</span>
-            آخرین مقالات
-            <span class="text-main-Purple">اکسینس</span>
-          </h2>
-          <button
-            class="hidden lg:inline-block font-bold text-md bg-main-Purple text-smoky-white px-7 py-4 rounded-3xl">مشاهده
-            بیشتر</button>
-        </div>
-
-
-        <!-- ******* -->
-        <div class="swiper cards-swiper">
-          <ul class="swiper-wrapper ">
-            <li class="swiper-slide col-span-1 bg-smoky-white border-1 border-dark-smoky rounded-3xl">
-              <div>
-                <img class="w-full object-fill rounded-tl-3xl rounded-tr-3xl"
-                  src="./src/assets/img/articles/article-img-1.png" alt="">
-              </div>
-              <div class="px-4 pt-4 pb-4 space-y-3 text-center">
-                <h3 class="text-[14px] font-bold">مقاله شماره یک</h3>
-                <button class="text-[12px] bg-main-Purple text-white w-full font-bold py-1 rounded-3xl">بیشتر
-                  بخوانید</button>
-              </div>
+              id="close__button"
+              class="absolute -left-8 lg:hidden cursor-pointer p-5 bg-main-Purple rounded-tl-full rounded-bl-full flex items-center justify-center"
+            >
+              <img
+                class="w-[30px] h-[30px]"
+                src="./src/assets/img/icons/header/close.png"
+                alt="close button"
+              />
+            </button>
+          </section>
+          <ul
+            class="text-md pr-6 pl-8 pt-32 lg:pr-0 lg:pl-0 lg:px-0 lg:pt-0 lg:flex lg:items-center lg:justify-center lg:gap-x-8"
+          >
+            <li class="lg:hidden mb-10">
+              <a href="#">
+                <img
+                  class="w-[130px]"
+                  src="./src/assets/img/logo/EXINESS.png"
+                  alt="exinnes logo"
+                />
+              </a>
             </li>
-            <li class="swiper-slide col-span-1 bg-smoky-white border-1 border-dark-smoky rounded-3xl">
-              <div>
-                <img class="w-full object-cover rounded-tl-3xl rounded-tr-3xl"
-                  src="./src/assets/img/articles/article-img-1.png" alt="">
+            <li class="text-white my-7 lg:my-0 lg:text-black">
+              <div class="flex items-center gap-x-3 lg:block pb-6 lg:pb-0">
+                <img
+                  class="lg:hidden w-[20px]"
+                  src="./src/assets/img/icons/header/home.png"
+                  alt=""
+                />
+                <a href="#">صفحه اصلی</a>
               </div>
-              <div class="px-4 pt-4 pb-4 space-y-3 text-center">
-                <h3 class="text-[14px] font-bold">مقاله شماره دو</h3>
-                <button class="text-[12px] bg-main-Purple text-white w-full font-bold py-1 rounded-3xl">بیشتر
-                  بخوانید</button>
-              </div>
+              <span
+                class="lg:hidden block w-full h-[4px] bg-gradient-to-r from-white/0 to-white"
+              ></span>
             </li>
-            <li class="swiper-slide col-span-1 bg-smoky-white border-1 border-dark-smoky rounded-3xl">
-              <div>
-                <img class="w-full object-fill rounded-tl-3xl rounded-tr-3xl"
-                  src="./src/assets/img/articles/article-img-1.png" alt="">
-              </div>
-              <div class="px-4 pt-4 pb-4 space-y-3 text-center">
-                <h3 class="text-[14px] font-bold">مقاله شماره سه</h3>
-                <button class="text-[12px] bg-main-Purple text-white w-full font-bold py-1 rounded-3xl">بیشتر
-                  بخوانید</button>
-              </div>
+            <li
+              class="flex items-center gap-x-3 lg:block text-white my-7 lg:my-0 lg:text-black"
+            >
+              <img
+                class="lg:hidden w-[20px]"
+                src="./src/assets/img/icons/header/archive.png"
+                alt=""
+              />
+              <a href="#">خدمات</a>
             </li>
-            <li class="swiper-slide col-span-1 bg-smoky-white border-1 border-dark-smoky rounded-3xl">
-              <div>
-                <img class="w-full object-cover rounded-tl-3xl rounded-tr-3xl"
-                  src="./src/assets/img/articles/article-img-1.png" alt="">
-              </div>
-              <div class="px-4 pt-4 pb-4 space-y-3 text-center">
-                <h3 class="text-[14px] font-bold">مقاله شماره چهار</h3>
-                <button class="text-[12px] bg-main-Purple text-white w-full font-bold py-1 rounded-3xl">بیشتر
-                  بخوانید</button>
-              </div>
+            <li
+              class="flex items-center gap-x-3 lg:block text-white my-7 lg:my-0 lg:text-black"
+            >
+              <img
+                class="lg:hidden w-[20px]"
+                src="./src/assets/img/icons/header/star.png"
+                alt=""
+              />
+              <a href="#">همکاران</a>
             </li>
-            <li class="swiper-slide col-span-1 bg-smoky-white border-1 border-dark-smoky rounded-3xl">
-              <div>
-                <img class="w-full object-fill rounded-tl-3xl rounded-tr-3xl"
-                  src="./src/assets/img/articles/article-img-1.png" alt="">
-              </div>
-              <div class="px-4 pt-4 pb-4 space-y-3 text-center">
-                <h3 class="text-[14px] font-bold">مقاله شماره پنج</h3>
-                <button class="text-[12px] bg-main-Purple text-white w-full font-bold py-1 rounded-3xl">بیشتر
-                  بخوانید</button>
-              </div>
+            <li
+              class="flex items-center gap-x-3 lg:block text-white my-7 lg:my-0 lg:text-black"
+            >
+              <img
+                class="lg:hidden w-[20px]"
+                src="./src/assets/img/icons/header/blogs.png"
+                alt=""
+              />
+              <a href="#">وبلاگ</a>
+            </li>
+            <li
+              class="flex items-center gap-x-3 lg:block text-white my-7 lg:my-0 lg:text-black"
+            >
+              <img
+                class="lg:hidden w-[20px]"
+                src="./src/assets/img/icons/header/about.png"
+                alt=""
+              />
+              <a href="#">درباره ما</a>
+            </li>
+            <li
+              class="flex items-center gap-x-3 lg:block text-white my-7 lg:my-0 lg:text-black"
+            >
+              <img
+                class="lg:hidden w-[20px]"
+                src="./src/assets/img/icons/header/contact.png"
+                alt=""
+              />
+              <a href="#">تماس با ما</a>
             </li>
           </ul>
-        </div>
-        <!-- ******* -->
+        </nav>
+        <!-- actions -->
+        <section
+          class="space-x-2 order-3 lg:order-3 col-span-1 flex justify-end"
+        >
+          <button
+            class="bg-main-Purple text-smoky-white px-2 py-1.5 md:px-5 md:py-2 lg:px-8 lg:py-3.5 rounded-4xl"
+          >
+            ثبت نام
+          </button>
+          <button
+            class="bg-very-light-purple text-main-Purple border-1 border-dark-smoky px-2 py-1.5 md:px-5 md:py-2 lg:px-8 lg:py-3.5 rounded-4xl"
+          >
+            ورود
+          </button>
+        </section>
+        <!-- hamburger menu -->
+        <section class="lg:hidden order-1 text-base/1">
+          <button
+            id="menu__button"
+            class="space-y-1 md:space-y-1.5 cursor-pointer"
+          >
+            <span
+              class="w-[27px] md:w-[45px] h-[4px] rounded-full bg-black block"
+            ></span>
+            <span
+              class="w-[27px] md:w-[45px] h-[4px] rounded-full bg-black block"
+            ></span>
+            <span
+              class="w-[27px] md:w-[45px] h-[4px] rounded-full bg-black block"
+            ></span>
+          </button>
+        </section>
       </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container">
-      <div class="bg-pastel-purple rounded-tr-4xl rounded-tl-4xl px-10 pt-6 lg:pt-14">
-        <!-- header -->
-        <section class="flex items-center lg:mb-20 mb-6">
-          <div class="mb-8 lg:mb-0">
-            <a href="#">
-              <img class="w-[100px] md:w-[160px] lg:w-[180px]" src="./src/assets/img/logo/EXINESS.png" alt="">
-            </a>
+    </header>
+    <main>
+      <!-- hero-section -->
+      <section>
+        <div class="container py-17 lg:grid lg:grid-cols-2 lg:gap-x-12">
+          <!-- title -->
+          <div class="w-full flex flex-col">
+            <!-- main title -->
+            <div class="order-1 mb-3 lg:mb-6 xl:mb-10">
+              <h2
+                class="flex items-center justify-center gap-x-1 text-[22px] md:text-[30px] lg:text-[25px] font-medium text-center"
+              >
+                <span
+                  class="font-shahrzad text-main-Purple text-4xl lg:text-5xl"
+                  >؛</span
+                >راهکارهای <span class="text-main-Purple">دیجیتال</span> برای
+                <span class="text-main-Purple">رشد</span>
+                کسب‌وکار شما در
+              </h2>
+            </div>
+            <!-- name -->
+            <h1
+              class="[text-shadow:var(--shadow-hero-shadow)] order-2 font-black text-[40px] md:text-[60px] text-center lg:text-[50px] xl:text-[60px] 2xl:text-[70px] mb-5 lg:mb-4 xl:mb-6"
+            >
+              EXINESS <span class="font-black px-2"> | </span> اکسینس
+            </h1>
+            <!-- sh -->
+            <p
+              class="order-4 font-bold text-xl md:text-2xl text-center leading-[40px] md:leading-[47px] mb-9"
+            >
+              اکسینس تحولی در بیزنس <br />
+              EXINESS Revelotion In Business
+            </p>
+            <!-- img -->
+            <div class="space-y-4 text-center lg:hidden order-3 mb-6 w-full">
+              <div class="flex items-center gap-x-4 w-full pl-4">
+                <img
+                  class="w-1/2"
+                  src="./src/assets/img/Rectangle/Rectangle-p.png"
+                  alt="Rectangle"
+                />
+                <img
+                  class="w-1/2"
+                  src="./src/assets/img/Rectangle/Rectangle-light-p.png"
+                  alt="Rectangle"
+                />
+              </div>
+              <div class="flex items-center gap-x-4 w-full pl-4">
+                <img
+                  class="w-1/2"
+                  src="./src/assets/img/Rectangle/Rectangle-light-p.png"
+                  alt="Rectangle"
+                />
+                <img
+                  class="w-1/2"
+                  src="./src/assets/img/Rectangle/Rectangle-p.png"
+                  alt="Rectangle"
+                />
+              </div>
+            </div>
+            <!-- actions -->
+            <div
+              class="space-x-4 md:space-x-8 text-center order-5 grid grid-cols-2 lg:flex lg:items-center lg:justify-center"
+            >
+              <button
+                class="bg-main-Purple text-smoky-white rounded-full px-5 py-2 md:px-9 md:py-4.5 text-md md:text-xl font-bold cursor-pointer"
+              >
+                همین حالا شروع کنید
+              </button>
+              <button
+                class="bg-very-light-purple text-main-Purple border-1 border-dark-smoky rounded-full px-5 py-2 md:px-9 md:py-4.5 text-md font-bold dm:text-xl cursor-pointer"
+              >
+                دریافت مشاوره رایگان
+              </button>
+            </div>
+          </div>
+          <!-- img -->
+          <div class="space-y-4 hidden lg:block">
+            <div class="flex items-center gap-x-4 w-full pl-4">
+              <img
+                class="w-1/2"
+                src="./src/assets/img/Rectangle/Rectangle-light-p.png"
+                alt="Rectangle"
+              />
+              <img
+                class="w-1/2"
+                src="./src/assets/img/Rectangle/Rectangle-p.png"
+                alt="Rectangle"
+              />
+            </div>
+            <div class="flex items-center gap-x-4 w-full pl-4">
+              <img
+                class="w-1/2"
+                src="./src/assets/img/Rectangle/Rectangle-p.png"
+                alt="Rectangle"
+              />
+              <img
+                class="w-1/2"
+                src="./src/assets/img/Rectangle/Rectangle-light-p.png"
+                alt="Rectangle"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Collaborate. -->
+      <section>
+        <div class="container pt-4 lg:pt-12 mb-38">
+          <div class="text-center mb-16">
+            <h2
+              class="font-bold text-lg lg:text-3xl flex items-center justify-center gap-x-1"
+            >
+              <span class="font-shahrzad text-main-Purple text-4xl lg:text-5xl"
+                >؛</span
+              >
+              برند هایی که با ما همکاری کردند
+            </h2>
           </div>
 
-          <nav>
-            <ul class="flex items-center gap-x-1">
-              <li>
-                <a class="text-[8px]" href="#">صفحه اصلی</a>
+          <div class="swiper logos-swiper">
+            <div class="logo-swiper-wrapper swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  class="h-[70px]"
+                  src="./src/assets/img/Collaboration/bejocam black.svg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="h-[70px]"
+                  src="./src/assets/img/Collaboration/bumoona black.svg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="h-[70px]"
+                  src="./src/assets/img/Collaboration/home louk black.svg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="h-[70px]"
+                  src="./src/assets/img/Collaboration/nightway black.svg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="h-[70px]"
+                  src="./src/assets/img/Collaboration/Paytabom black.svg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="h-[70px]"
+                  src="./src/assets/img/Collaboration/pizo black.svg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="h-[70px]"
+                  src="./src/assets/img/Collaboration/sciepole black.svg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="h-[70px]"
+                  src="./src/assets/img/Collaboration/spacrea black.svg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="h-[70px]"
+                  src="./src/assets/img/Collaboration/tobama black.svg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="h-[70px]"
+                  src="./src/assets/img/Collaboration/viravall black.svg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="h-[70px]"
+                  src="./src/assets/img/Collaboration/weura black.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- about exiness -->
+      <section>
+        <div class="container pb-12 mb-24">
+          <h2
+            class="font-bold text-3xl text-center mb-14 flex items-center justify-center gap-x-1"
+          >
+            <span class="font-shahrzad text-main-Purple text-4xl lg:text-5xl"
+              >؛</span
+            >
+            درباره
+            <span class="text-main-Purple">اکسینس</span>
+          </h2>
+          <div class="lg:grid lg:grid-cols-2 lg:gap-x-7">
+            <div class="grid grid-cols-3 lg:block">
+              <img
+                class="col-span-2 mb-4 sm:mb-6 md:mb-10 lg:mb-0"
+                src="./src/assets/img/about-team/about-team-img.png"
+                alt="about team img"
+              />
+
+              <div
+                class="grid grid-rows-3 lg:hidden items-center text-center space-y-4 pt-4 mb-5"
+              >
+                <div class="flex flex-col items-center">
+                  <h2 class="font-semibold text-2xl sm:text-4xl md:text-5xl">
+                    <span class="text-main-Purple">+</span>
+                    100
+                  </h2>
+                  <p class="font-medium text-sm sm:text-lg md:text-xl">
+                    مشتریان راضی
+                  </p>
+                </div>
+                <div class="flex flex-col items-center">
+                  <h2 class="font-semibold text-2xl sm:text-4xl md:text-5xl">
+                    <span class="text-main-Purple">+</span>200
+                  </h2>
+                  <p class="font-medium text-sm sm:text-lg md:text-xl">
+                    پروژه های موفق
+                  </p>
+                </div>
+                <div class="flex flex-col items-center">
+                  <h2 class="font-semibold text-2xl sm:text-4xl md:text-5xl">
+                    <span class="text-main-Purple">+</span>5K
+                  </h2>
+                  <p class="font-medium text-sm sm:text-lg md:text-xl">
+                    کاربران فعال
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="lg:pl-4 lg:pt-8 flex flex-col">
+              <h2
+                class="flex items-center justify-center lg:justify-start gap-x-1 font-bold text-2xl mb-4 sm:mb-6 md:mb-7 lg:mb-8 text-center lg:text-right sm:text-[24px]"
+              >
+                <span class="font-shahrzad text-main-Purple text-5xl">؛</span>
+                تجربه و نوآوری در کنار هم
+              </h2>
+              <p
+                class="font-medium text-md sm:text-xl mb-6 md:mb-8 lg:mb-14 text-center lg:text-right"
+              >
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+                در ستون و سطرآنچنان که لازم است.
+              </p>
+
+              <div
+                class="lg:flex items-center justify-center text-center space-x-16 mb-9 hidden"
+              >
+                <div class="flex flex-col items-center">
+                  <h2
+                    class="font-semibold text-4xl lg:flex lg:items-center lg:gap-x-2"
+                  >
+                    <span class="text-main-Purple">+</span>
+                    100
+                  </h2>
+                  <p class="font-medium text-sm">مشتریان راضی</p>
+                </div>
+                <div class="flex flex-col items-center">
+                  <h2
+                    class="font-semibold text-4xl lg:flex lg:items-center lg:gap-x-2"
+                  >
+                    <span class="text-main-Purple">+</span>200
+                  </h2>
+                  <p class="font-medium text-sm">پروژه های موفق</p>
+                </div>
+                <div class="flex flex-col items-center">
+                  <h2
+                    class="font-semibold text-4xl lg:flex lg:items-center lg:gap-x-2"
+                  >
+                    <span class="text-main-Purple">+</span>5K
+                  </h2>
+                  <p class="font-medium text-sm">کاربران فعال</p>
+                </div>
+              </div>
+
+              <div class="text-center lg:text-right">
+                <button
+                  class="font-semibold text-smoky-white bg-main-Purple px-6 py-3 rounded-3xl sm:text-xl"
+                >
+                  برای دریافت مشاوره رایگان کلیک کنید.
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- EXINESS lines -->
+      <section>
+        <div class="container mb-16 lg:mb-32">
+          <h2
+            class="font-bold text-3xl text-center mb-20 flex items-center justify-center gap-x-1"
+          >
+            <span class="font-shahrzad text-main-Purple text-4xl lg:text-5xl"
+              >؛</span
+            >
+            لاین های
+            <span class="text-main-Purple">اکسینس</span>
+          </h2>
+
+          <div class="grid grid-cols-1 gap-y-6 md:grid-cols-2 md:gap-x-6">
+            <div
+              class="bg-main-Purple rounded-3xl px-8 py-10 md:px-10 md:py-14"
+            >
+              <div class="flex items-center space-x-4 pb-6">
+                <div
+                  class="w-[60px] h-[70px] flex items-center justify-center rounded-xl bg-white"
+                >
+                  <img
+                    class="w-[50px] h-[50px]"
+                    src="./src/assets/img/logo/exiness lines/eness.png"
+                    alt="eness brand logo"
+                  />
+                </div>
+                <h2 class="font-bold text-2xl text-smoky-white">لاینENESS</h2>
+              </div>
+              <p class="text-sec-smoky-white font-normal text-sm md:text-lg">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+                در ستون و سطرآنچنان که لازم است.چاپگرها و متون بلکه روزنامه و
+                مجله در ستون و سطرآنچنان که لازم است.
+              </p>
+            </div>
+
+            <div
+              class="bg-main-Purple rounded-3xl px-8 py-10 md:px-10 md:py-14"
+            >
+              <div class="flex items-center space-x-4 pb-6">
+                <div
+                  class="w-[60px] h-[70px] flex items-center justify-center rounded-xl bg-white"
+                >
+                  <img
+                    class="w-[60px] h-[60px] object-contain"
+                    src="./src/assets/img/logo/exiness lines/exin.png"
+                    alt="exin brand logo"
+                  />
+                </div>
+                <h2 class="font-bold text-2xl text-smoky-white">لاینEXIN</h2>
+              </div>
+              <p class="text-sec-smoky-white font-normal text-sm md:text-lg">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+                در ستون و سطرآنچنان که لازم است.چاپگرها و متون بلکه روزنامه و
+                مجله در ستون و سطرآنچنان که لازم است.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- services -->
+      <section>
+        <div class="container mb-24">
+          <div class="grid grid-cols-2 grid-rows-5 gap-3">
+            <div
+              class="col-span-2 bg-sec-smoky-white rounded-3xl border-1 border-dark-smoky py-5 md:py-12 lg:py-14"
+            >
+              <h2
+                class="flex items-center justify-center font-bold text-xl md:text-2xl lg:text-3xl text-center pb-2 md:pb-4"
+              >
+                <span
+                  class="font-shahrzad text-main-Purple text-4xl lg:text-5xl"
+                  >؛</span
+                >
+                خدمات <span class="text-main-Purple">مشاوره ای</span> اکسینس
+              </h2>
+              <p
+                class="text-center text-paragraph font-medium text-sm md:text-lg pb-5"
+              >
+                تیم حرفه ای ما طیف گسترده ای از خدمات را ارائه میدهد.
+              </p>
+              <div class="text-center space-x-4 mb-4">
+                <button
+                  class="bg-main-Purple text-smoky-white text-sm font-normal px-6 py-2 md:text-lg rounded-3xl"
+                >
+                  مشاهده بیشتر
+                </button>
+                <button
+                  class="text-main-Purple bg-smoky-white border-1 border-dark-smoky text-sm md:text-lg font-normal px-6 py-2 rounded-3xl"
+                >
+                  دریافت مشاوره
+                </button>
+              </div>
+            </div>
+            <div
+              class="cols-span-1 bg-sec-smoky-white rounded-3xl border-1 border-dark-smoky px-5 py-8 pb-5 md:py-12 lg:py-14"
+            >
+              <div
+                class="flex items-center gap-x-2 text-sm sm:text-lg md:text-xl mb-2"
+              >
+                <img src="./src/assets/img/icons/dot.png" alt="dot" />
+                <h3 class="text-sm md:text-xl lg:text-2xl">مشاوره بازاریابی</h3>
+              </div>
+              <p class="text-paragraph text-[12px] sm:text-sm md:text-lg">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                استفاده از طراحان گرافیک است.
+              </p>
+            </div>
+            <div
+              class="cols-span-1 bg-sec-smoky-white rounded-3xl border-1 border-dark-smoky px-5 py-8 pb-5 md:py-12 lg:py-14"
+            >
+              <div
+                class="flex items-center gap-x-2 text-sm sm:text-lg md:text-xl mb-2"
+              >
+                <img src="./src/assets/img/icons/dot.png" alt="dot" />
+                <h3 class="text-sm md:text-xl lg:text-2xl">مشاوره مدیریت</h3>
+              </div>
+              <p class="text-paragraph text-[12px] sm:text-sm md:text-lg">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                استفاده از طراحان گرافیک است.
+              </p>
+            </div>
+            <div
+              class="col-span-2 bg-sec-smoky-white rounded-3xl border-1 border-dark-smoky px-5 py-8 pb-5 md:py-12 lg:py-14"
+            >
+              <div
+                class="flex items-center gap-x-2 text-sm sm:text-lg md:text-xl mb-2"
+              >
+                <img src="./src/assets/img/icons/dot.png" alt="dot" />
+                <h3 class="text-sm md:text-xl lg:text-2xl">
+                  مشاوره فناوری اطلاعات
+                </h3>
+              </div>
+              <p class="text-paragraph text-[12px] sm:text-sm md:text-lg">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                استفاده از طراحان گرافیک است.
+              </p>
+            </div>
+            <div
+              class="col-span-1 bg-sec-smoky-white rounded-3xl border-1 border-dark-smoky px-5 py-8 pb-5 md:py-12 lg:py-14"
+            >
+              <div
+                class="flex items-center gap-x-2 text-sm sm:text-lg md:text-xl mb-2"
+              >
+                <img src="./src/assets/img/icons/dot.png" alt="dot" />
+                <h3 class="text-sm md:text-xl lg:text-2xl">
+                  مشاوره منابع انسانی
+                </h3>
+              </div>
+              <p class="text-paragraph text-[12px] sm:text-sm md:text-lg">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                استفاده از طراحان گرافیک است.
+              </p>
+            </div>
+            <div
+              class="col-span-1 bg-sec-smoky-white rounded-3xl border-1 border-dark-smoky px-5 py-8 pb-5 md:py-12 lg:py-14"
+            >
+              <div
+                class="flex items-center gap-x-2 text-sm sm:text-lg md:text-xl mb-2"
+              >
+                <img src="./src/assets/img/icons/dot.png" alt="dot" />
+                <h3 class="text-sm md:text-xl lg:text-2xl">مشاوره مالی</h3>
+              </div>
+              <p class="text-paragraph text-[12px] sm:text-sm md:text-lg">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                استفاده از طراحان گرافیک است.
+              </p>
+            </div>
+            <div
+              class="col-span-1 bg-sec-smoky-white rounded-3xl border-1 border-dark-smoky px-5 py-8 pb-5 md:py-12 lg:py-14"
+            >
+              <div
+                class="flex items-center gap-x-2 text-sm sm:text-lg md:text-xl mb-2"
+              >
+                <img src="./src/assets/img/icons/dot.png" alt="dot" />
+                <h3 class="text-sm md:text-xl lg:text-2xl">
+                  مشاوره سرمایه گذاری
+                </h3>
+              </div>
+              <p class="text-paragraph text-[12px] sm:text-sm md:text-lg">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                استفاده از طراحان گرافیک است.
+              </p>
+            </div>
+            <div
+              class="col-span-1 bg-sec-smoky-white rounded-3xl border-1 border-dark-smoky px-5 py-8 pb-5 md:py-12 lg:py-14"
+            >
+              <div
+                class="flex items-center gap-x-2 text-sm sm:text-lg md:text-xl mb-2"
+              >
+                <img src="./src/assets/img/icons/dot.png" alt="dot" />
+                <h3 class="text-sm md:text-xl lg:text-2xl">
+                  مشاوره ثبت اختراع
+                </h3>
+              </div>
+              <p class="text-paragraph text-[12px] sm:text-sm md:text-lg">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                استفاده از طراحان گرافیک است.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- resume -->
+      <section>
+        <div class="container mb-24">
+          <h2
+            class="flex items-center justify-center gap-x-1 font-bold text-3xl text-center mb-[70px] md:mb-[200px]"
+          >
+            <span class="font-shahrzad text-main-Purple text-4xl lg:text-5xl"
+              >؛</span
+            >
+            رزومه کاری
+            <span class="text-main-Purple">اکسینس</span>
+          </h2>
+
+          <div
+            class="w-full max-h-[260px] md:max-h-fit flex bg-main-Purple md:bg-smoky-white border-1 border-dark-smoky rounded-tl-3xl rounded-tr-3xl"
+          >
+            <div class="hidden md:block relative w-[55%] bg-main-Purple">
+              <div
+                class="absolute -top-[40px] sm:-top-[60px] md:-top-[80px] lg:-top-[100px] pt-[25%] rounded-tl-4xl rounded-tr-4xl bg-main-Purple flex items-center justify-center w-full h-full"
+              >
+                <img
+                  class="w-[450px] lg:w-[500px]"
+                  src="./src/assets/img/resume/resume-section-img.png"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="md:w-[45%] py-10 pl-4 pr-2 md:pr-6">
+              <div
+                class="flex items-center justify-center md:justify-start gap-x-2 lg:gap-x-2 mb-3"
+              >
+                <img
+                  class="w-[25px]"
+                  src="./src/assets/img/icons/dot.png"
+                  alt="dot"
+                />
+                <h3
+                  class="text-white md:text-black font-bold text-lg lg:text-2xl"
+                >
+                  درباره اکسینس
+                </h3>
+              </div>
+              <div>
+                <p
+                  class="text-sm md:text-[13px] lg:text-[14px] lg:text-base md:text-start px-6 md:px-0 text-center font-normal inline-block text-smoky-white md:text-paragraph mb-4 md:mb-6 lg:mb-8"
+                >
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                  با استفاده از طراحان گرافیک است.لورم ایپسوم متن ساختگی با
+                  تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
+                  است.
+                </p>
+                <div class="text-center md:text-right">
+                  <button
+                    class="bg-white md:bg-main-Purple md:text-sec-smoky-white text-[13px] md:text-[15px] lg:text-base font-semibold px-4 py-2 md:px-2 md:py-1 lg:px-8 lg:py-2 rounded-4xl"
+                  >
+                    مشاهده رزومه اکسینس
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- articles -->
+      <section>
+        <div class="container mb-24">
+          <div class="flex items-center justify-between mb-10">
+            <h2
+              class="flex items-center justify-center gap-x-1 font-bold text-xl lg:text-3xl"
+            >
+              <span class="font-shahrzad text-main-Purple text-4xl lg:text-5xl"
+                >؛</span
+              >
+              آخرین مقالات
+              <span class="text-main-Purple">اکسینس</span>
+            </h2>
+            <button
+              class="hidden lg:inline-block font-bold text-md bg-main-Purple text-smoky-white px-7 py-4 rounded-3xl"
+            >
+              مشاهده بیشتر
+            </button>
+          </div>
+
+          <!-- ******* -->
+          <div class="swiper cards-swiper">
+            <ul class="swiper-wrapper">
+              <li
+                class="swiper-slide col-span-1 bg-smoky-white border-1 border-dark-smoky rounded-3xl"
+              >
+                <div>
+                  <img
+                    class="w-full object-fill rounded-tl-3xl rounded-tr-3xl"
+                    src="./src/assets/img/articles/article-img-1.png"
+                    alt=""
+                  />
+                </div>
+                <div class="px-4 pt-4 pb-4 space-y-3 text-center">
+                  <h3 class="text-[14px] font-bold">مقاله شماره یک</h3>
+                  <button
+                    class="text-[12px] bg-main-Purple text-white w-full font-bold py-1 rounded-3xl"
+                  >
+                    بیشتر بخوانید
+                  </button>
+                </div>
               </li>
-              <li>
-                <a class="text-[8px]" href="#">خدمات</a>
+              <li
+                class="swiper-slide col-span-1 bg-smoky-white border-1 border-dark-smoky rounded-3xl"
+              >
+                <div>
+                  <img
+                    class="w-full object-cover rounded-tl-3xl rounded-tr-3xl"
+                    src="./src/assets/img/articles/article-img-1.png"
+                    alt=""
+                  />
+                </div>
+                <div class="px-4 pt-4 pb-4 space-y-3 text-center">
+                  <h3 class="text-[14px] font-bold">مقاله شماره دو</h3>
+                  <button
+                    class="text-[12px] bg-main-Purple text-white w-full font-bold py-1 rounded-3xl"
+                  >
+                    بیشتر بخوانید
+                  </button>
+                </div>
               </li>
-              <li>
-                <a class="text-[8px]" href="#">نمونه کار</a>
+              <li
+                class="swiper-slide col-span-1 bg-smoky-white border-1 border-dark-smoky rounded-3xl"
+              >
+                <div>
+                  <img
+                    class="w-full object-fill rounded-tl-3xl rounded-tr-3xl"
+                    src="./src/assets/img/articles/article-img-1.png"
+                    alt=""
+                  />
+                </div>
+                <div class="px-4 pt-4 pb-4 space-y-3 text-center">
+                  <h3 class="text-[14px] font-bold">مقاله شماره سه</h3>
+                  <button
+                    class="text-[12px] bg-main-Purple text-white w-full font-bold py-1 rounded-3xl"
+                  >
+                    بیشتر بخوانید
+                  </button>
+                </div>
               </li>
-              <li>
-                <a class="text-[8px]" href="#">وبلاگ</a>
+              <li
+                class="swiper-slide col-span-1 bg-smoky-white border-1 border-dark-smoky rounded-3xl"
+              >
+                <div>
+                  <img
+                    class="w-full object-cover rounded-tl-3xl rounded-tr-3xl"
+                    src="./src/assets/img/articles/article-img-1.png"
+                    alt=""
+                  />
+                </div>
+                <div class="px-4 pt-4 pb-4 space-y-3 text-center">
+                  <h3 class="text-[14px] font-bold">مقاله شماره چهار</h3>
+                  <button
+                    class="text-[12px] bg-main-Purple text-white w-full font-bold py-1 rounded-3xl"
+                  >
+                    بیشتر بخوانید
+                  </button>
+                </div>
               </li>
-              <li>
-                <a class="text-[8px]" href="#">درباره ما</a>
-              </li>
-              <li>
-                <a class="text-[8px]" href="#">تماس با ما</a>
+              <li
+                class="swiper-slide col-span-1 bg-smoky-white border-1 border-dark-smoky rounded-3xl"
+              >
+                <div>
+                  <img
+                    class="w-full object-fill rounded-tl-3xl rounded-tr-3xl"
+                    src="./src/assets/img/articles/article-img-1.png"
+                    alt=""
+                  />
+                </div>
+                <div class="px-4 pt-4 pb-4 space-y-3 text-center">
+                  <h3 class="text-[14px] font-bold">مقاله شماره پنج</h3>
+                  <button
+                    class="text-[12px] bg-main-Purple text-white w-full font-bold py-1 rounded-3xl"
+                  >
+                    بیشتر بخوانید
+                  </button>
+                </div>
               </li>
             </ul>
-          </nav>
-        </section>
-        <!-- info and form section -->
-        <section class="pb-14">
-          <div class="mb-6 lg:mb-8">
-            <span class="hidden lg:inline-block bg-main-Purple text-white p-1 font-semibold px-3 py-1 rounded-xl">ارتباط
-              با ما :</span>
           </div>
-        </section>
-        <!-- exiness -->
-        <section class="pb-8">
-          <h3 class="text-center border-b-1 border-black font-bold text-base lg:text-xl pb-2">اکسینس تحولی در بـیزنس |
-            EXINESS
-            Revelotion In Business</h3>
-        </section>
-        <!-- copyright -->
-        <section class="flex items-center justify-center gap-x-4 pb-4 text-center">
-          <p class="font-normal text-[12px] lg:text-lg">Privacy Policy</p>
-          <p class="font-normal text-[12px]">© 2023 EXINESS. All Rights Reserved.</p>
-        </section>
+          <!-- ******* -->
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div
+          class="bg-pastel-purple rounded-tr-4xl rounded-tl-4xl px-10 pt-6 lg:pt-14"
+        >
+          <!-- header -->
+          <section class="flex items-center lg:mb-20 mb-6">
+            <div class="mb-8 lg:mb-0">
+              <a href="#">
+                <img
+                  class="w-[100px] md:w-[160px] lg:w-[180px]"
+                  src="./src/assets/img/logo/EXINESS.png"
+                  alt=""
+                />
+              </a>
+            </div>
+
+            <nav>
+              <ul class="flex items-center gap-x-1">
+                <li>
+                  <a class="text-[8px]" href="#">صفحه اصلی</a>
+                </li>
+                <li>
+                  <a class="text-[8px]" href="#">خدمات</a>
+                </li>
+                <li>
+                  <a class="text-[8px]" href="#">نمونه کار</a>
+                </li>
+                <li>
+                  <a class="text-[8px]" href="#">وبلاگ</a>
+                </li>
+                <li>
+                  <a class="text-[8px]" href="#">درباره ما</a>
+                </li>
+                <li>
+                  <a class="text-[8px]" href="#">تماس با ما</a>
+                </li>
+              </ul>
+            </nav>
+          </section>
+          <!-- info and form section -->
+          <section class="pb-14">
+            <div class="mb-6 lg:mb-8">
+              <span
+                class="hidden lg:inline-block bg-main-Purple text-white p-1 font-semibold px-3 py-1 rounded-xl"
+                >ارتباط با ما :</span
+              >
+            </div>
+          </section>
+          <!-- exiness -->
+          <section class="pb-8">
+            <h3
+              class="text-center border-b-1 border-black font-bold text-base lg:text-xl pb-2"
+            >
+              اکسینس تحولی در بـیزنس | EXINESS Revelotion In Business
+            </h3>
+          </section>
+          <!-- copyright -->
+          <section
+            class="flex items-center justify-center gap-x-4 pb-4 text-center"
+          >
+            <p class="font-normal text-[12px] lg:text-lg">Privacy Policy</p>
+            <p class="font-normal text-[12px]">
+              © 2023 EXINESS. All Rights Reserved.
+            </p>
+          </section>
+        </div>
       </div>
-  </footer>
+    </footer>
 
-  <script type="module" src="/src/main.js"></script>
-  <script type="module" src="./src/script/util/slider/articlesSliderSwiperConfig.js"></script>
-  <script type="module" src="./src/script/util/slider/logosSliderConfig.js"></script>
-</body>
-
+    <script type="module" src="/src/main.js"></script>
+    <script
+      type="module"
+      src="./src/script/util/slider/articlesSliderSwiperConfig.js"
+    ></script>
+    <script
+      type="module"
+      src="./src/script/util/slider/logosSliderConfig.js"
+    ></script>
+  </body>
 </html>

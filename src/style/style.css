@@ -2,7 +2,8 @@
 
 @font-face {
   font-family: "peyda";
-  src: local("PeydaWeb-Regular"),
+  src:
+    local("PeydaWeb-Regular"),
     url("../assets/fonts/PeydaWeb-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
@@ -10,7 +11,8 @@
 }
 @font-face {
   font-family: "peyda";
-  src: local("PeydaWeb-Medium"),
+  src:
+    local("PeydaWeb-Medium"),
     url("../assets/fonts/PeydaWeb-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
@@ -18,7 +20,8 @@
 }
 @font-face {
   font-family: "peyda";
-  src: local("PeydaWeb-SemiBold"),
+  src:
+    local("PeydaWeb-SemiBold"),
     url("../assets/fonts/PeydaWeb-SemiBold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
@@ -26,7 +29,8 @@
 }
 @font-face {
   font-family: "peyda";
-  src: local("PeydaWeb-Bold"),
+  src:
+    local("PeydaWeb-Bold"),
     url("../assets/fonts/PeydaWeb-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
@@ -34,7 +38,8 @@
 }
 @font-face {
   font-family: "peyda";
-  src: local("PeydaWeb-ExtraBold"),
+  src:
+    local("PeydaWeb-ExtraBold"),
     url("../assets/fonts/PeydaWeb-ExtraBold.woff2") format("woff2");
   font-weight: 800;
   font-style: normal;
@@ -42,7 +47,8 @@
 }
 @font-face {
   font-family: "peyda";
-  src: local("PeydaWeb-Black"),
+  src:
+    local("PeydaWeb-Black"),
     url("../assets/fonts/PeydaWeb-Black.woff2") format("woff2");
   font-weight: 900;
   font-style: normal;
@@ -50,7 +56,8 @@
 }
 @font-face {
   font-family: "shahrzad";
-  src: local("shahrzad-medium"),
+  src:
+    local("shahrzad-medium"),
     url("../assets/fonts/Shahrzad.ttf") format("ttf");
   font-weight: 400;
   font-style: normal;
@@ -103,12 +110,11 @@ body {
   --shadow-hero-shadow: 0px 4px 4px rgba(132, 92, 250, 0.8);
 }
 
-
 @layer utilities {
   .dir-ltr {
     direction: ltr !important;
   }
-  
+
   .force-hidden {
     display: none !important;
   }
